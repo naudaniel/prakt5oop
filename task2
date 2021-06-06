@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Prakt5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string x = Console.ReadLine();
+            string[] arr = x.Split(',', '.', ' ');
+            int max = 0;
+            foreach (string word in arr)
+            {
+                if (word.Length > max)
+                {
+                    max = word.Length;
+                    string x1 = word;
+                    Console.WriteLine("Найдовше слово - " + x1);
+                }
+            }
+            Console.WriteLine("Кiлькiсть символiв - " + max);
+            Console.ReadLine();
+        }        
+    }
+}
